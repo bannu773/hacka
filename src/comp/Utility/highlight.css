@@ -1,0 +1,10 @@
+.highlight-text {
+    background-image: linear-gradient(to bottom, #ff1aff, #d91aff, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: larger;
+    letter-spacing: 15px;
+    /* -webkit-text-stroke:  0.1px rgb(189, 9, 255); */
+  
+  }
