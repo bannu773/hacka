@@ -15,7 +15,7 @@ function Team({teamRef}) {
   return (
     <div className="team" ref={teamRef}>
       <div className="col-md-12 text-center" ref={head.ref}>
-        <h3 className="animate-character">OUR TEAM</h3>
+        <h3 className="animate-character">TEAM</h3>
       </div>
       <div className="team-cont">
         <div className="team-card bg-white  ">

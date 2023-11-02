@@ -1,9 +1,9 @@
 import React from 'react'
 import './card.css'
 
-const Card1 = ({ Images ,text}) => {
+const Card1 = ({ Images ,text,content}) => {
     return (
-        <div className=' overflow-hidden pt-9'>
+        <div className=' overflow-hidden pt-9 w-80'>
             <div className='relative flex flex-col pl-6 pr-6 z-30 '>
                 <div className='pt-4 pl-5 '>
                     <img
@@ -34,25 +34,8 @@ const Card1 = ({ Images ,text}) => {
                 <div>
                     <div className="flex flex-col items-start justify-start py-0 pr-[3px] pl-0">
                         <div className="relative leading-[25.6px] [text-shadow:0px_0px_1px_rgba(0,_0,_0,_0.01)] text-white">
-                            <p className="m-0">
-                                Unleash your creativity and innovation
-                            </p>
-                            <p className="m-0">
-                                to redefine what an on-chain gaming
-                            </p>
-                            <p className="m-0">
-                                experience can be. From autonomous
-                            </p>
-                            <p className="m-0">
-                                worlds to immersive multiplayer
-                            </p>
-                            <p className="m-0">
-                                games, the possibilities are endless.
-                            </p>
-                            <p className="m-0">
-                                Special judging bonus for users using
-                            </p>
-                            <p className="m-0">the Flow Unity SDK.</p>
+
+                            <p className="m-0 text-justify pt-3">{content}</p>
                         </div>
                     </div>
                 </div>

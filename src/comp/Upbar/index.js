@@ -21,7 +21,7 @@ const pages = [
   "About",
   "Themes",
   "Timeline",
-  "Chief_Guests",
+  // "Chief_Guests",
   "Sponsors",
   "FAQS",
   "Team",
@@ -169,7 +169,7 @@ function UpBar({ scrollToSection }) {
                 sx={{  textTransform: "capitalize"  }}
               >
                 <Typography textAlign="center" className={classes.menuLink}>
-                    <a href={`${page.toLowerCase()}`}>{page}</a>
+                    <a >{page}</a>
                   </Typography>
               </Button>
             ))}

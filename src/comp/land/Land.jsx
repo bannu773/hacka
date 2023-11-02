@@ -24,6 +24,9 @@ import backgroundImage from "../../assets/stars1.jpg";
 import Team from "../Team/Team";
 import HighlightText from "../Utility/HighlightText";
 import Themes from "../Themes/Themes";
+import image from '../../assets/img.png'
+import gfg from "../../assets/gfg-new-logo.png"
+
 const cards = [
   {
     image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg",
@@ -220,7 +223,14 @@ const Land = ({
       <section className="page_2" ref={back.ref}>
         <div className="head_1" >
           <div className="slide_1">
-            <h1><HighlightText text={"AVISHKAAR"}/> Hackathon 2023</h1>
+            <div className="starting_img bg-white pt-2 pb-2 px-2">
+              <img src={image}  />
+            </div>
+            <div className="starting_gfg bg-white pt-2 px-2">
+              <p className=" text-sm text-center ">Powered by</p>
+              <img src={gfg} className=""/>
+            </div>
+            <h1><HighlightText text={"AVISHKAAR"} /> Hackathon 2023</h1>
             <div className="con_1">
               <p>-Igniting Inventions, Inspiring Innovators</p>
             </div>
@@ -272,7 +282,7 @@ const Land = ({
 
       <TimeLine timelineRef={timelineRef} />
 
-      <Cguests chiefguestsRef={chiefguestsRef} />
+      {/* <Cguests chiefguestsRef={chiefguestsRef} /> */}
       <Sponsers sponsorsRef={sponsorsRef} />
       <div
         className="faq"
